@@ -1,0 +1,12 @@
+def test_statefulness_two_states(self):
+    sequence = np.ones((1, 2, 3))
+    layer = layers.RNN(TwoStatesRNNCell(2), stateful=True)
+    layer(sequence)
+    output = layer(sequence)
+    self.assertAllClose(np.array([[90.0, 90.0]]), output)
+    layer = layers.RNN(TwoStatesRNNCell(2), stateful=True, return_state=True)
+    layer(sequence)
+    (output, state_1, state_2) = layer(sequence)
+    self.assertAllClose(np.array([[90.0, 90.0]]), output)
+    self.assertAllClose(np.array([[45.0, 45.0]]), state_1)
+    self.assertAllClose(np.array([[45.0, 45.0]]), state_2)

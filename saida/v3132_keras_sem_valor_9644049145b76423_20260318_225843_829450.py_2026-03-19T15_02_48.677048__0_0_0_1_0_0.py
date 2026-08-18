@@ -1,0 +1,10 @@
+def test_passing_initial_state_single_state(self):
+    sequence = np.ones((2, 3, 2))
+    state = np.ones((2, 2))
+    layer = layers.RNN(OneStateRNNCell(2), return_sequences=False)
+    output = layer(sequence, initial_state=state)
+    self.assertAllClose(np.array([[22.0, 22.0], [22.0, 22.0]]), output)
+    layer = layers.RNN(OneStateRNNCell(2), return_sequences=False, return_state=True)
+    (output, state) = layer(sequence, initial_state=state)
+    self.assertAllClose(np.array([[22.0, 22.0], [22.0, 22.0]]), output)
+    self.assertAllClose(np.array([[22.0, 22.0], [22.0, 22.0]]), state)

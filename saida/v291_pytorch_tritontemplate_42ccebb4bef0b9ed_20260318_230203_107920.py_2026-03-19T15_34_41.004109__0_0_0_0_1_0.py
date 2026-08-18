@@ -1,0 +1,2 @@
+def make_kernel():
+    return self.kernel_type(kernel_name=kernel_name, output_node=fake_out, workspace_arg=workspace_arg, use_jit=False, hint_override=hint_override, tma_store=tma_store, transpose_discontiguous_tensor_descriptors_override=transpose_discontiguous_tensor_descriptors_override, **kernel_options)

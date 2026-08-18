@@ -1,0 +1,2 @@
+def define_schema(cls):
+    return io.Schema(node_id='EmptyAceStepLatentAudio', category='latent/audio', inputs=[io.Float.Input('seconds', default=120.0, min=1.0, max=1000.0, step=0.1), io.Int.Input('batch_size', default=1, min=1, max=4096, tooltip='The number of latent images in the batch.')], outputs=[io.Latent.Output()])

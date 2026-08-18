@@ -1,0 +1,2 @@
+def __init__(self, device='cpu', dtype=None, model_options={}, name='gemma2_2b', clip_model=Gemma2_2BModel):
+    super().__init__(device=device, dtype=dtype, name=name, clip_model=clip_model, model_options=model_options)

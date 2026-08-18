@@ -1,0 +1,2 @@
+def should_register(self, model: ModelPatcher, model_options: dict, target_dict: dict[str], registered: HookGroup):
+    return self.custom_should_register(self, model, model_options, target_dict, registered)

@@ -1,0 +1,6 @@
+Package,Module,Class,LOC,WMC,NOM,NOPM,NOF,NOPF,LCOM,Fan-in,Fan-out
+saida,01280_fastapi_create_model_field_5e161fb5c94dbd4a_20260318_230203_106717_2026-03-19T15_35_39.606988,,10,5,1,1,0,0,0,0,0
+saida,01280_fastapi_generate_operation_id_for_path_1afc3c23384f6ba6_20260318_230846_938934_2026-03-22T07_07_55.245845,,6,1,1,1,0,0,0,0,0
+saida,01280_fastapi_generate_operation_id_for_path_1afc3c23384f6ba6_20260318_230846_938934_2026-03-22T12_25_16.969900,,6,1,1,1,0,0,0,0,0
+saida,01280_fastapi_generate_operation_id_for_path_1afc3c23384f6ba6_20260318_230846_938934_2026-03-22T17_20_54.163904,,6,1,1,1,0,0,0,0,0
+saida,0130_vllm_cachingmetrics_2e5f4e13ea5d4fd3_20260318_230846_942658_2026-03-21T21_47_28.532787,,39,9,0,0,0,0,-1,0,0

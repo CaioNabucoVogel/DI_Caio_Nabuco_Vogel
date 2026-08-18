@@ -1,0 +1,3 @@
+@overload
+def unwrap_proxy(self, e: Tensor) -> Union[Proxy, Tensor]:
+    ...

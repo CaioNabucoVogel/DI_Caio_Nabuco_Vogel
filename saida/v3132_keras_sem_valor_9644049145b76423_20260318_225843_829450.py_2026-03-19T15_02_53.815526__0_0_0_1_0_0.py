@@ -1,0 +1,11 @@
+def test_go_backwards(self):
+    sequence = np.arange(24).reshape((2, 3, 4)).astype('float32')
+    layer = layers.RNN(OneStateRNNCell(2), go_backwards=True)
+    layer(sequence)
+    output = layer(sequence)
+    self.assertAllClose(np.array([[202.0, 202.0], [538.0, 538.0]]), output, tpu_atol=0.0001, tpu_rtol=0.0001)
+    layer = layers.RNN(OneStateRNNCell(2), stateful=True, return_state=True)
+    layer(sequence)
+    (output, state) = layer(sequence)
+    self.assertAllClose(np.array([[954.0, 954.0], [3978.0, 3978.0]]), output, tpu_atol=0.01, tpu_rtol=0.01)
+    self.assertAllClose(np.array([[954.0, 954.0], [3978.0, 3978.0]]), state, tpu_atol=0.01, tpu_rtol=0.01)

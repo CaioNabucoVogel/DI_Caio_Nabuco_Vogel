@@ -1,0 +1,7 @@
+def _encode_plus(self, table: 'pd.DataFrame', query: TextInput | PreTokenizedInput | EncodedInput, answer_coordinates: list[tuple] | None=None, answer_text: list[TextInput] | None=None, add_special_tokens: bool=True, padding: bool | str | PaddingStrategy=False, truncation: bool | str | TapasTruncationStrategy=False, max_length: int | None=None, pad_to_multiple_of: int | None=None, padding_side: str | None=None, return_tensors: str | TensorType | None=None, return_token_type_ids: bool | None=True, return_attention_mask: bool | None=True, return_special_tokens_mask: bool=False, return_offsets_mapping: bool=False, return_length: bool=False, verbose: bool=True, **kwargs):
+    if query is None:
+        query = ''
+        logger.warning('TAPAS is a question answering model but you have not passed a query. Please be aware that the model will probably not behave correctly.')
+    table_tokens = self._tokenize_table(table)
+    (query, query_tokens) = self._get_question_tokens(query)
+    return self.prepare_for_model(table, query, tokenized_table=table_tokens, query_tokens=query_tokens, answer_coordinates=answer_coordinates, answer_text=answer_text, add_special_tokens=add_special_tokens, truncation=truncation, padding=padding, max_length=max_length, pad_to_multiple_of=pad_to_multiple_of, padding_side=padding_side, return_tensors=return_tensors, prepend_batch_axis=True, return_attention_mask=return_attention_mask, return_token_type_ids=return_token_type_ids, return_special_tokens_mask=return_special_tokens_mask, return_length=return_length, verbose=verbose)

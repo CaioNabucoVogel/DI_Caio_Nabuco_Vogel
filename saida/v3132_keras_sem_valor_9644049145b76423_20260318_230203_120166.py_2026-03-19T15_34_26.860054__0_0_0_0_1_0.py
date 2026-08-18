@@ -1,0 +1,2 @@
+def compute_output_shape(self, input_shape):
+    return compute_conv_output_shape(input_shape, self.filters, self.kernel_size, strides=self.strides, padding=self.padding, data_format=self.data_format, dilation_rate=self.dilation_rate)

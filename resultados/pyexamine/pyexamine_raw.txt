@@ -1,0 +1,112 @@
+Code Quality Analysis Report
+============================
+
+No structural smells detected.
+
+Code Smells:
+------------
+- Long Method: 'add_routes' has 239 lines in saida\0164_comfyui_sem_valor_744cdbba48d6f14c_20260318_225843_827225.py_2026-03-19T15_05_51.866592.py at line 1
+- Long Method: 'list_userdata_v2' has 69 lines in saida\0164_comfyui_sem_valor_744cdbba48d6f14c_20260318_225843_827225.py_2026-03-19T15_05_51.866592.py at line 75
+- Long Method: 'AgentMessagePrompt._get_browser_state_description' has 65 lines in saida\v0113_browser-use_agentmessageprompt_c2eea65bf37d9e1f_20260318_225543_147675.py_2026-03-19T03_29_02.953035.py at line 62
+- Long Method: '_get_browser_state_description' has 65 lines in saida\v0113_browser-use_agentmessageprompt_c2eea65bf37d9e1f_20260318_230203_098474.py_2026-03-19T15_34_07.954056.py at line 1
+- Long Method: '_get_browser_state_description' has 65 lines in saida\v0113_browser-use_agentmessageprompt_c2eea65bf37d9e1f_20260318_230222_693142.py_2026-03-19T15_51_57.787654.py at line 1
+- Long Method: 'attach_handler_to_session' has 60 lines in saida\v0113_browser-use_basewatchdog_5ba6b5fbc90ccc8d_20260318_225843_811670.py_2026-03-19T15_06_51.181013.py at line 1
+- Long Method: 'attach_handler_to_session' has 60 lines in saida\v0113_browser-use_basewatchdog_5ba6b5fbc90ccc8d_20260318_230222_694748.py_2026-03-19T15_51_32.386954.py at line 1
+- Long Method: 'ChatOCIRaw.ainvoke' has 56 lines in saida\v0113_browser-use_chatociraw_091d1edb35ffd7d6_20260318_225543_148245.py_2026-03-19T03_29_23.124088.py at line 189
+- Long Method: 'LocalBrowserWatchdog._launch_browser' has 66 lines in saida\v0113_browser-use_localbrowserwatchdog_d9c7ada55ef96a52_20260318_225543_148860.py_2026-03-19T03_28_31.851242.py at line 42
+- Long Method: 'LocalBrowserWatchdog._find_installed_browser_path' has 50 lines in saida\v0113_browser-use_localbrowserwatchdog_d9c7ada55ef96a52_20260318_225543_148860.py_2026-03-19T03_28_31.851242.py at line 112
+- Long Method: '_find_installed_browser_path' has 50 lines in saida\v0113_browser-use_localbrowserwatchdog_d9c7ada55ef96a52_20260318_225843_812863.py_2026-03-19T15_03_08.983614.py at line 1
+- Long Method: 'serialize_messages' has 80 lines in saida\v0113_browser-use_ocirawmessageserializer_bdebb8b5fd4b21d2_20260318_225843_809171.py_2026-03-19T15_06_36.855800.py at line 1
+- Long Method: 'serialize_messages_for_cohere' has 53 lines in saida\v0113_browser-use_ocirawmessageserializer_bdebb8b5fd4b21d2_20260318_225843_809171.py_2026-03-19T15_06_38.733533.py at line 1
+- Long Method: 'main' has 67 lines in saida\v015n_markitdown_sem_valor_f5587f7f544fa8e1_20260318_225843_835754.py_2026-03-19T15_04_18.541644.py at line 1
+- Long Method: 'PromptServer.__init__' has 553 lines in saida\v0164_comfyui_sem_valor_8a0c394cc3381567_20260318_225543_158609.py_2026-03-19T03_28_27.720656.py at line 3
+- Long Method: 'view_image' has 69 lines in saida\v0164_comfyui_sem_valor_8a0c394cc3381567_20260318_225543_158609.py_2026-03-19T03_28_27.720656.py at line 218
+- Long Method: 'get_jobs' has 48 lines in saida\v0164_comfyui_sem_valor_8a0c394cc3381567_20260318_225543_158609.py_2026-03-19T03_28_27.720656.py at line 394
+- Long Method: 'load' has 93 lines in saida\v0164_comfyui_sem_valor_8a0c394cc3381567_20260318_225843_828368.py_2026-03-19T15_11_54.905309.py at line 1
+- Long Method: 'dpm_solver_adaptive' has 47 lines in saida\v0164_comfyui_sem_valor_8a0c394cc3381567_20260318_230222_709783.py_2026-03-19T15_55_29.946989.py at line 1
+- Long Method: 'dpm_solver_adaptive' has 47 lines in saida\v092_comfyui_dpmsolver_27e7cd7af9fe0b76_20260318_230222_701895.py_2026-03-19T15_54_35.548373.py at line 1
+- Long Method: 'open_folder' has 49 lines in saida\v1101_stable_diffusion_sem_valor_816ea5c6e9d2b525_20260318_225843_832854.py_2026-03-19T15_11_16.591345.py at line 1
+- Long Method: 'get_images' has 90 lines in saida\v1101_stable_diffusion_sem_valor_816ea5c6e9d2b525_20260318_225843_834957.py_2026-03-19T15_00_46.552182.py at line 1
+- Long Method: 'create_user_useradd' has 49 lines in saida\v2201_ansible_aix_204e488e3a6a5c6c_20260318_225843_813141.py_2026-03-19T15_09_53.274637.py at line 1
+- Long Method: 'modify_user_usermod' has 65 lines in saida\v2201_ansible_aix_204e488e3a6a5c6c_20260318_225843_813141.py_2026-03-19T15_09_56.879248.py at line 1
+- Long Method: 'create_user_useradd' has 49 lines in saida\v2201_ansible_aix_204e488e3a6a5c6c_20260318_230222_696294.py_2026-03-19T15_53_17.143386.py at line 1
+- Long Method: 'modify_user_usermod' has 65 lines in saida\v2201_ansible_aix_204e488e3a6a5c6c_20260318_230222_696294.py_2026-03-19T15_53_19.468342.py at line 1
+- Long Method: 'create_user' has 56 lines in saida\v2201_ansible_busybox_69b87859705901cc_20260318_225843_811177.py_2026-03-19T15_02_56.628517.py at line 1
+- Long Method: 'create_user' has 64 lines in saida\v2201_ansible_freebsduser_a9b93713c48a32cc_20260318_225843_819478.py_2026-03-19T15_10_10.134576.py at line 1
+- Long Method: 'modify_user' has 95 lines in saida\v2201_ansible_freebsduser_a9b93713c48a32cc_20260318_225843_819478.py_2026-03-19T15_10_15.128029.py at line 1
+- Long Method: 'create_user' has 64 lines in saida\v2201_ansible_freebsduser_a9b93713c48a32cc_20260318_230222_700348.py_2026-03-19T15_55_48.367278.py at line 1
+- Long Method: 'modify_user' has 95 lines in saida\v2201_ansible_freebsduser_a9b93713c48a32cc_20260318_230222_700348.py_2026-03-19T15_55_52.959508.py at line 1
+- Long Method: 'create_user' has 52 lines in saida\v2201_ansible_netbsduser_c27e9ccd9faaa56a_20260318_225843_814820.py_2026-03-19T15_01_23.849103.py at line 1
+- Long Method: 'modify_user' has 67 lines in saida\v2201_ansible_netbsduser_c27e9ccd9faaa56a_20260318_225843_814820.py_2026-03-19T15_01_25.794733.py at line 1
+- Long Method: 'create_user' has 52 lines in saida\v2201_ansible_netbsduser_c27e9ccd9faaa56a_20260318_230222_699067.py_2026-03-19T15_55_14.826408.py at line 1
+- Long Method: 'modify_user' has 67 lines in saida\v2201_ansible_netbsduser_c27e9ccd9faaa56a_20260318_230222_699067.py_2026-03-19T15_55_24.641718.py at line 1
+- Long Method: 'create_user' has 50 lines in saida\v2201_ansible_openbsduser_3412ff4f6a136e20_20260318_225843_810350.py_2026-03-19T15_10_54.456484.py at line 1
+- Long Method: 'modify_user' has 74 lines in saida\v2201_ansible_openbsduser_3412ff4f6a136e20_20260318_225843_810350.py_2026-03-19T15_11_03.460757.py at line 1
+- Long Method: 'Play.compile' has 59 lines in saida\v2201_ansible_play_7e7cc9ea47e0b394_20260318_225543_152060.py_2026-03-19T03_28_59.293391.py at line 196
+- Long Method: 'SunOS.create_user' has 92 lines in saida\v2201_ansible_sunos_8ade46a1c55f5302_20260318_225543_152498.py_2026-03-19T03_28_44.675551.py at line 50
+- Long Method: 'SunOS.modify_user_usermod' has 95 lines in saida\v2201_ansible_sunos_8ade46a1c55f5302_20260318_225543_152498.py_2026-03-19T03_28_44.675551.py at line 143
+- Long Method: 'create_user' has 92 lines in saida\v2201_ansible_sunos_8ade46a1c55f5302_20260318_225843_824311.py_2026-03-19T15_01_18.023410.py at line 1
+- Long Method: 'modify_user_usermod' has 95 lines in saida\v2201_ansible_sunos_8ade46a1c55f5302_20260318_225843_824311.py_2026-03-19T15_01_20.035521.py at line 1
+- Long Method: 'JatsDocumentBackend._parse_element_citation' has 67 lines in saida\v2760_docling_sem_valor_7b1c69baadc287ea_20260318_225543_154825.py_2026-03-19T03_28_41.234800.py at line 181
+- Long Method: 'JatsDocumentBackend.parse_table_data' has 69 lines in saida\v2760_docling_sem_valor_7b1c69baadc287ea_20260318_225543_154825.py_2026-03-19T03_28_41.234800.py at line 282
+- Long Method: 'JatsDocumentBackend._walk_linear' has 66 lines in saida\v2760_docling_sem_valor_7b1c69baadc287ea_20260318_225543_154825.py_2026-03-19T03_28_41.234800.py at line 402
+- Long Method: '__init__' has 47 lines in saida\v2760_docling_sem_valor_7b1c69baadc287ea_20260318_225843_827730.py_2026-03-19T15_11_49.749286.py at line 1
+- Long Method: 'process_images' has 76 lines in saida\v2760_docling_sem_valor_7b1c69baadc287ea_20260318_225843_831598.py_2026-03-19T15_09_18.496168.py at line 1
+- Long Method: 'aoti_compile_with_persistent_cache' has 74 lines in saida\v291_pytorch_aoti_compile_with_persistent_cache_696fac4875456f90_20260318_225843_823700.py_2026-03-19T15_06_03.560037.py at line 1
+- Long Method: 'aoti_compile_with_persistent_cache' has 74 lines in saida\v291_pytorch_aoti_compile_with_persistent_cache_696fac4875456f90_20260318_230203_109041.py_2026-03-19T15_36_18.026237.py at line 1
+- Long Method: 'compile' has 67 lines in saida\v291_pytorch_cudacodecache_5a0bff6704a2ccce_20260318_225843_816071.py_2026-03-19T15_08_55.193269.py at line 1
+- Long Method: 'LookupTableChoices.lookup_template_configs' has 53 lines in saida\v291_pytorch_lookuptablechoices_a561599011d90519_20260318_225543_153585.py_2026-03-19T03_28_29.601915.py at line 120
+- Long Method: 'lookup_template_configs' has 53 lines in saida\v291_pytorch_lookuptablechoices_a561599011d90519_20260318_225843_825817.py_2026-03-19T15_03_53.172911.py at line 1
+- Long Method: '_MakefxTracer._trace_inner' has 53 lines in saida\v291_pytorch_makefxtracer_aea3903dd73258cc_20260318_225543_149532.py_2026-03-19T03_29_00.581948.py at line 102
+- Long Method: '_sink_waits_iterative_internal' has 127 lines in saida\v291_pytorch_sink_waits_iterative_internal_35b104a139cfece3_20260318_225843_808892.py_2026-03-19T15_05_17.920109.py at line 1
+- Long Method: 'generate_and_load' has 72 lines in saida\v291_pytorch_tritontemplate_42ccebb4bef0b9ed_20260318_230203_107920.py_2026-03-19T15_34_40.084149.py at line 1
+- Long Method: 'generate' has 51 lines in saida\v291_pytorch_tritontemplate_42ccebb4bef0b9ed_20260318_230203_107920.py_2026-03-19T15_34_45.518198.py at line 1
+- Long Method: 'add_special_tokens' has 70 lines in saida\v3131_transformers_add_special_tokens_07323b74106398dc_20260318_225843_820089.py_2026-03-19T15_02_39.908329.py at line 1
+- Long Method: 'get_expanded_tied_weights_keys' has 82 lines in saida\v3131_transformers_get_expanded_tied_weights_keys_29d27f5a4c705f8a_20260318_225843_824017.py_2026-03-19T15_06_07.763630.py at line 1
+- Long Method: '_get_resized_embeddings' has 85 lines in saida\v3131_transformers_get_resized_embeddings_52fd70c41d869793_20260318_225843_823197.py_2026-03-19T15_07_34.437488.py at line 1
+- Long Method: '_get_resized_lm_head' has 68 lines in saida\v3131_transformers_get_resized_lm_head_5a05bec2e2dc5c62_20260318_225843_815086.py_2026-03-19T15_06_05.483800.py at line 1
+- Long Method: '_load_pretrained_model' has 49 lines in saida\v3131_transformers_load_pretrained_model_04d0a9705c6ea643_20260318_225843_816827.py_2026-03-19T15_06_43.044740.py at line 1
+- Long Method: '_load_pretrained_model' has 49 lines in saida\v3131_transformers_load_pretrained_model_04d0a9705c6ea643_20260318_230203_102010.py_2026-03-19T15_35_36.646836.py at line 1
+- Long Method: 'save_pretrained' has 154 lines in saida\v3131_transformers_save_pretrained_c2d5f18393aa1bfc_20260318_225843_819818.py_2026-03-19T15_01_35.518403.py at line 1
+- Long Method: 'save_pretrained' has 154 lines in saida\v3131_transformers_save_pretrained_c2d5f18393aa1bfc_20260318_230203_106122.py_2026-03-19T15_33_45.126950.py at line 1
+- Long Method: 'setup_low_rank_optimizer' has 57 lines in saida\v3131_transformers_setup_low_rank_optimizer_74de96baf64dcb46_20260318_225843_813766.py_2026-03-19T15_09_04.316510.py at line 1
+- Long Method: 'set_dataloader' has 51 lines in saida\v3131_transformers_set_dataloader_acbc065e27fc8db3_20260318_230203_108557.py_2026-03-19T15_35_34.673622.py at line 1
+- Long Method: 'set_dataloader' has 51 lines in saida\v3131_transformers_set_dataloader_acbc065e27fc8db3_20260318_230222_703283.py_2026-03-19T15_51_07.896408.py at line 1
+- Long Method: 'tie_weights' has 48 lines in saida\v3131_transformers_tie_weights_ebfa49bb01939364_20260318_225843_815824.py_2026-03-19T15_10_25.916170.py at line 1
+- Long Method: '_wrap_model' has 83 lines in saida\v3131_transformers_wrap_model_633fe9f2c851223c_20260318_225843_822679.py_2026-03-19T15_04_07.407970.py at line 1
+- Long Method: 'elastic_transform' has 53 lines in saida\v3132_keras_sem_valor_76e1ed0a7bef8e6c_20260318_225843_826213.py_2026-03-19T15_07_16.192657.py at line 1
+- Long Method: 'resize' has 85 lines in saida\v3132_keras_sem_valor_76e1ed0a7bef8e6c_20260318_225843_830294.py_2026-03-19T15_01_14.813565.py at line 1
+- Long Method: '_quantile' has 65 lines in saida\v3132_keras_sem_valor_76e1ed0a7bef8e6c_20260318_230222_718946.py_2026-03-19T15_54_49.447966.py at line 1
+- Long Method: 'MultiHeadAttention._compute_attention_mask' has 46 lines in saida\v3132_keras_sem_valor_9644049145b76423_20260318_225543_154374.py_2026-03-19T03_29_20.648791.py at line 308
+- Long Method: 'KerasFileEditor.compare' has 62 lines in saida\v3132_keras_sem_valor_9644049145b76423_20260318_225543_155546.py_2026-03-19T03_28_34.035415.py at line 61
+- Long Method: '_compute_attention_mask' has 46 lines in saida\v3132_keras_sem_valor_9644049145b76423_20260318_230203_115983.py_2026-03-19T15_36_11.826943.py at line 1
+- Long Method: 'test_basic_flow' has 57 lines in saida\v3132_keras_sem_valor_9644049145b76423_20260318_230222_709211.py_2026-03-19T15_52_21.964813.py at line 1
+- Long Method: 'invoke' has 47 lines in saida\v4120_localstack_lambdaproxyintegration_52b65bbc78495d00_20260318_225843_818079.py_2026-03-19T15_11_43.657175.py at line 1
+- Long Method: 'invoke' has 47 lines in saida\v4120_localstack_lambdaproxyintegration_52b65bbc78495d00_20260318_230203_104983.py_2026-03-19T15_35_09.317007.py at line 1
+- Long Method: '_add_paths' has 49 lines in saida\v4120_localstack_openapioas30exporter_1b1746eee25f026c_20260318_225843_823454.py_2026-03-19T15_03_06.806011.py at line 1
+- Long Method: '_add_paths' has 49 lines in saida\v4120_localstack_openapiswaggerexporter_01d9a9aca974f3ce_20260318_225843_818338.py_2026-03-19T15_07_00.959650.py at line 1
+- Long Method: 'run' has 67 lines in saida\v5-70_yolov_sem_valor_52e0f9ceb5cd18df_20260318_225843_828075.py_2026-03-19T15_00_50.658455.py at line 1
+- Long Method: 'run' has 67 lines in saida\v5-70_yolov_sem_valor_52e0f9ceb5cd18df_20260318_230203_112757.py_2026-03-19T15_34_02.901757.py at line 1
+- Long Method: 'run' has 60 lines in saida\v5-70_yolov_sem_valor_52e0f9ceb5cd18df_20260318_230203_116685.py_2026-03-19T15_33_43.755023.py at line 1
+- Long Method: 'run' has 60 lines in saida\v5-70_yolov_sem_valor_52e0f9ceb5cd18df_20260318_230222_713309.py_2026-03-19T15_51_07.319420.py at line 1
+- Long Method: '__new__' has 128 lines in saida\v601_django_modelbase_7a02cc8e70e2ea54_20260318_225843_818942.py_2026-03-19T15_07_05.481746.py at line 1
+- Long Method: 'BaseSchemaValidator.validate_unique_ids' has 50 lines in saida\vb0cbd3df1533b396d281a6886d5132f623393a9c_antropic-skills_sem_valor_cfbeb146efe12628_20260318_225543_156304.py_2026-03-19T03_28_56.758676.py at line 93
+- Long Method: 'BaseSchemaValidator.validate_file_references' has 61 lines in saida\vb0cbd3df1533b396d281a6886d5132f623393a9c_antropic-skills_sem_valor_cfbeb146efe12628_20260318_225543_156304.py_2026-03-19T03_28_56.758676.py at line 144
+- Long Method: 'BaseSchemaValidator.validate_all_relationship_ids' has 53 lines in saida\vb0cbd3df1533b396d281a6886d5132f623393a9c_antropic-skills_sem_valor_cfbeb146efe12628_20260318_225543_156304.py_2026-03-19T03_28_56.758676.py at line 206
+- Long Method: 'BaseSchemaValidator.validate_content_types' has 56 lines in saida\vb0cbd3df1533b396d281a6886d5132f623393a9c_antropic-skills_sem_valor_cfbeb146efe12628_20260318_225543_156304.py_2026-03-19T03_28_56.758676.py at line 279
+- Long Method: 'validate_unique_ids' has 50 lines in saida\vb0cbd3df1533b396d281a6886d5132f623393a9c_antropic-skills_sem_valor_cfbeb146efe12628_20260318_225843_838517.py_2026-03-19T15_00_59.500251.py at line 1
+- Long Method: 'validate_file_references' has 61 lines in saida\vb0cbd3df1533b396d281a6886d5132f623393a9c_antropic-skills_sem_valor_cfbeb146efe12628_20260318_225843_838517.py_2026-03-19T15_01_00.569092.py at line 1
+- Long Method: 'validate_all_relationship_ids' has 53 lines in saida\vb0cbd3df1533b396d281a6886d5132f623393a9c_antropic-skills_sem_valor_cfbeb146efe12628_20260318_225843_838517.py_2026-03-19T15_01_01.215644.py at line 1
+- Long Method: 'validate_content_types' has 56 lines in saida\vb0cbd3df1533b396d281a6886d5132f623393a9c_antropic-skills_sem_valor_cfbeb146efe12628_20260318_225843_838517.py_2026-03-19T15_01_03.639599.py at line 1
+- Long Method: 'validate_unique_ids' has 50 lines in saida\vb0cbd3df1533b396d281a6886d5132f623393a9c_antropic-skills_sem_valor_cfbeb146efe12628_20260318_230222_717961.py_2026-03-19T15_50_51.417387.py at line 1
+- Long Method: 'validate_file_references' has 61 lines in saida\vb0cbd3df1533b396d281a6886d5132f623393a9c_antropic-skills_sem_valor_cfbeb146efe12628_20260318_230222_717961.py_2026-03-19T15_50_53.103873.py at line 1
+- Long Method: 'validate_all_relationship_ids' has 53 lines in saida\vb0cbd3df1533b396d281a6886d5132f623393a9c_antropic-skills_sem_valor_cfbeb146efe12628_20260318_230222_717961.py_2026-03-19T15_50_53.842071.py at line 1
+- Long Method: 'validate_content_types' has 56 lines in saida\vb0cbd3df1533b396d281a6886d5132f623393a9c_antropic-skills_sem_valor_cfbeb146efe12628_20260318_230222_717961.py_2026-03-19T15_50_56.099368.py at line 1
+No architectural smells detected.
+
+
+Summary:
+--------
+Total Structural Smells: 0
+Total Code Smells: 97
+Total Architectural Smells: 0

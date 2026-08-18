@@ -1,0 +1,4 @@
+def get_config(self):
+    base_config = super().get_config()
+    config = {'num_heads': self._num_heads, 'key_dim': self._key_dim, 'value_dim': self._value_dim, 'dropout': self._dropout, 'use_bias': self._use_bias, 'output_shape': self._output_shape, 'attention_axes': self._attention_axes, 'kernel_initializer': initializers.serialize(self._kernel_initializer), 'bias_initializer': initializers.serialize(self._bias_initializer), 'kernel_regularizer': regularizers.serialize(self._kernel_regularizer), 'bias_regularizer': regularizers.serialize(self._bias_regularizer), 'activity_regularizer': regularizers.serialize(self._activity_regularizer), 'kernel_constraint': constraints.serialize(self._kernel_constraint), 'bias_constraint': constraints.serialize(self._bias_constraint), 'seed': self.seed}
+    return {**base_config, **config}

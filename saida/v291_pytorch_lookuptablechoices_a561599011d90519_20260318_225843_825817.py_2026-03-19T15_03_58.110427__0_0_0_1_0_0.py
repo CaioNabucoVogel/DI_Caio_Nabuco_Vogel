@@ -1,0 +1,3 @@
+def _fallback(self, template_choices: dict[str, Generator[KernelTemplateChoice, None, None]], kernel_inputs: KernelInputs, templates: list[Union[KernelTemplate, ExternKernelChoice]], op_name: str, kwarg_overrides: Optional[dict[str, dict[str, Any]]]=None) -> list[KernelTemplateChoice]:
+    """Fallback to parent if no lookup table or no matches."""
+    return super()._finalize_template_configs(template_choices, kernel_inputs, templates, op_name, kwarg_overrides)
