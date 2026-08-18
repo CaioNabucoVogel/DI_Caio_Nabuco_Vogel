@@ -30,7 +30,8 @@ separadamente (Annual Activity Report, PIBIC 2025-2026).
 ```
 .
 ├── CSVs/                          # Subconjunto original do dataset pyhub-smell
-│                                   # (arquivos "zeroshot" e "without_ast")
+│                                  # (arquivos "zeroshot" e "without_ast")
+├── Imagens/                       # Tabelas e gráficos e utilizados no projeto
 ├── saida/                         # Arquivos .py gerados a partir dos CSVs (um por instância)
 ├── resultados/                    # CSVs de saída de cada ferramenta + ground truth
 │   ├── dpy/
@@ -156,7 +157,7 @@ jupyter notebook DI_Caio_Nabuco_Vogel.ipynb
 ```
 
 > O notebook espera encontrar os CSVs no caminho relativo
-> `Relatório_Pibic_2026/Extrator_ArqPy/resultados/...`. Se você mover o notebook para a
+> `/resultados/...`. Se você mover o notebook para a
 > raiz do repositório, ajuste esses caminhos na segunda célula antes de rodar.
 
 ---
