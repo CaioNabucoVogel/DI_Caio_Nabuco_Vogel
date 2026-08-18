@@ -43,6 +43,7 @@ separadamente (Annual Activity Report, PIBIC 2025-2026).
 ├── run_scylla.py
 ├── run_sonarqube.py
 ├── build_experts_csv.py
+├── DI_Caio_Nabuco_Vogel.ipynb     # Notebook de análise: métricas e gráficos/tabelas finais
 └── code_quality_config.yaml       # Configuração usada na execução das análises
 ```
 
@@ -64,6 +65,12 @@ CSVs/ ──► csv_to_py.py ──► saida/ ──► run_dpy.py       ──�
                                    └─► run_sonarqube.py  ──► resultados/sonarqube/
 
 CSVs/ ──► build_experts_csv.py ──► resultados/experts_ground_truth.csv
+
+resultados/dpy/dpy_per_file.csv            ┐
+resultados/pyexamine/pyexamine_per_file.csv│
+resultados/scylla/scylla_per_file.csv      ├─► DI_Caio_Nabuco_Vogel.ipynb ──► métricas + gráficos/tabelas
+resultados/sonarqube/sonar_per_file.csv    │
+resultados/experts_ground_truth.csv        ┘
 ```
 
 ### 1. `csv_to_py.py` — preparação do dataset
@@ -119,11 +126,38 @@ Colunas de saída:
 - `expert_long_parameter_list`
 - `expert_magic_numbers`
 
-### 4. Análise dos resultados
+### 4. `DI_Caio_Nabuco_Vogel.ipynb` — cálculo das métricas e geração dos gráficos
 
-Com os cinco CSVs em mãos (um por ferramenta + o ground truth dos especialistas), são
-calculadas as métricas de concordância e classificação apresentadas no relatório do
-projeto (Cohen's Kappa, Percentage Agreement, Precision, Recall e F1-Score).
+Notebook Jupyter que carrega os cinco CSVs "per_file" produzidos nas etapas anteriores
+(`resultados/dpy/dpy_per_file.csv`, `resultados/pyexamine/pyexamine_per_file.csv`,
+`resultados/scylla/scylla_per_file.csv`, `resultados/sonarqube/sonar_per_file.csv` e
+`resultados/experts_ground_truth.csv`) e produz **todas** as métricas e figuras
+apresentadas no relatório do projeto:
+
+- Contagem bruta de detecções por ferramenta (Long Method, Long Parameter List e ambos)
+- Coeficiente **Cohen's Kappa** entre cada par de ferramentas e a média por ferramenta
+- Coeficiente **Cohen's Kappa** de cada ferramenta em relação aos especialistas
+- **Percentage Agreement (Po)** entre ferramentas e entre cada ferramenta e os especialistas
+- **Precision**, **Recall** e **F1-Score** de cada ferramenta em relação aos especialistas
+  (usando `sklearn.metrics`, com `zero_division=0`)
+- **Matrizes de confusão** (via `ConfusionMatrixDisplay`) de cada ferramenta em relação
+  aos especialistas, para Long Method e para Long Parameter List
+
+As tabelas e gráficos são renderizados com `matplotlib`/`seaborn` e exportados como
+arquivos `.jpeg` (ex: `percentage_agreement_between_tools.jpeg`,
+`percentage_agreement_with_experts.jpeg`, `f1_score.jpeg`, `precision_score.jpeg`,
+`recall_score.jpeg`, além das figuras de matriz de confusão), que são as imagens
+utilizadas diretamente no relatório.
+
+**Como rodar:**
+
+```bash
+jupyter notebook DI_Caio_Nabuco_Vogel.ipynb
+```
+
+> O notebook espera encontrar os CSVs no caminho relativo
+> `Relatório_Pibic_2026/Extrator_ArqPy/resultados/...`. Se você mover o notebook para a
+> raiz do repositório, ajuste esses caminhos na segunda célula antes de rodar.
 
 ---
 
@@ -147,7 +181,12 @@ https://zenodo.org/records/21420951
 ## Requisitos
 
 - Python 3.x
-- Dependências específicas de cada script (ver imports em cada arquivo)
+- Para `DI_Caio_Nabuco_Vogel.ipynb`: `pandas`, `numpy`, `matplotlib`, `seaborn`,
+  `scikit-learn`, `jupyter`
+  ```bash
+  pip install pandas numpy matplotlib seaborn scikit-learn jupyter
+  ```
+- Dependências específicas de cada script de execução (ver imports em cada arquivo)
 - Acesso configurado às ferramentas listadas em [Dependências externas](#dependências-externas)
 
 ---
