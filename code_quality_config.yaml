@@ -1,0 +1,5 @@
+code_smells:
+  LONG_METHOD_LINES:
+    value: 45
+  LONG_PARAMETER_LIST:
+    value: 5
