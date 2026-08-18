@@ -150,12 +150,6 @@ arquivos `.jpeg` (ex: `percentage_agreement_between_tools.jpeg`,
 `recall_score.jpeg`, além das figuras de matriz de confusão), que são as imagens
 utilizadas diretamente no relatório.
 
-**Como rodar:**
-
-```bash
-jupyter notebook DI_Caio_Nabuco_Vogel.ipynb
-```
-
 > O notebook espera encontrar os CSVs no caminho relativo
 > `/resultados/...`. Se você mover o notebook para a
 > raiz do repositório, ajuste esses caminhos na segunda célula antes de rodar.
